@@ -4,6 +4,7 @@
 // of the anonymous function on line 6
 
 const polybiusModule = (function () {
+
   // Declaring table const which is an array holding objects of the letters as keys and the corresponding number as a value
 const table = [
   { letter: "a", value: "11" },
@@ -62,7 +63,7 @@ const table = [
       // Run code below to decode
     } else {
 
-      // Check if input is odd
+      // Return false if input is is odd numbers
       if (input.match(/(\w)/g).length % 2 === 1) return false
 
       // Create array out of the string with regex to split chars into pairs of 2 and to split spaces
